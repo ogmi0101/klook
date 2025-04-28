@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klook★橘米推薦行程</title>
+
+  <!-- 社群分享設定 (Open Graph) -->
+  <meta property="og:title" content="Klook★橘米推薦行程" />
+  <meta property="og:description" content="結帳輸入95折折扣碼【ogmi0101klook】" />
+  <meta property="og:image" content="https://ogmi0101.github.io/klook/ogmi0101square.jpg" />
+  <meta property="og:url" content="https://ogmi0101.github.io/klook/" />
+  <meta property="og:type" content="website" />
+
+  <!-- 背景與整體版型CSS -->
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-image: url('0101good.jpg'); /* 背景圖 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 標題區 */
+    .banner {
+      padding: 20px 0 10px 0;
+      text-align: center;
+    }
+    .banner h1 {
+      color: white;
+      font-size: 26px; /* 稍微大一點，像圖片那樣 */
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      margin: 0;
+      line-height: 1.4;
+    }
+    .banner p {
+      color: white;
+      font-size: 16px; /* 小字 */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      margin: 8px 0 0 0; /* 上面留一點點距離 */
+    }
+
+    /* 小工具外框設定 */
+    .grid-area {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    ins.klk-aff-widget {
+      max-height: 600px;
+      overflow-y: auto;
+      background: transparent !important;
+      display: block;
+    }
+
+    /* 滑鼠小動畫效果 */
+    ins.klk-aff-widget:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+
+    /* 手機版小優化 */
+    @media (max-width: 600px) {
+      .grid-area {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 白色標題 + 小字說明 -->
+  <div class="banner">
+    <h1>Klook酷創祭★橘米折扣碼【ogmi0101klook】</h1>
+    <p>酷創祭推薦行程，高雄好玩！</p> <!-- ⭐ 這行補回來 -->
+  </div>
+
+  <!-- 小工具區 -->
+  <div class="grid-area">
+    <ins class="klk-aff-widget"  
+         data-adid="1038372" 
+         data-lang="zh-TW" 
+         data-currency="TWD" 
+         data-cardH="220" 
+         data-padding="16" 
+         data-lgH="470" 
+         data-edgeValue="655" 
+         data-prod="static_widget" 
+         data-amount="4" 
+         data-layout="grid" 
+         data-column="2">
+      <a href="//www.klook.com/">Klook.com</a>
+    </ins>
+  </div>
+
+  <!-- 小工具載入腳本 -->
+  <script type="text/javascript">
+    (function (d, sc, u) {
+      var s = d.createElement(sc),
+          p = d.getElementsByTagName(sc)[0];
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = u;
+      p.parentNode.insertBefore(s, p);
+    })(document, "script", "https://affiliate.klook.com/widget/fetch-iframe-init.js");
+  </script>
+</body>
+</html>
