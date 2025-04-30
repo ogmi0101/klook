@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klook★橘米推薦行程</title>
+
+  <!-- 🔧 Open Graph 分享設定 -->
+  <meta property="og:title" content="橘米精選推薦｜KLOOK 酷創祭折扣優惠來啦！" />
+  <meta property="og:description" content="結帳輸入專屬折扣碼【ogmi0101klook】，享95折優惠。快來看看高雄好玩行程推薦！" />
+  <meta property="og:image" content="https://ogmi0101.github.io/klook/ogmi01015454.jpg" />
+  <meta property="og:url" content="https://ogmi0101.github.io/klook/" />
+  <meta property="og:type" content="website" />
+
+  <!-- 基本CSS設計 -->
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9 url('0101good.jpg') no-repeat center center;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .banner {
+      padding: 20px 0 10px 0;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .banner h1 {
+      color: white;
+      font-size: 26px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      margin: 0;
+      line-height: 1.4;
+    }
+    .banner p {
+      color: white;
+      font-size: 16px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      margin: 8px 0 0 0;
+    }
+    .grid-area {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    ins.klk-aff-widget {
+      display: block;
+      max-height: 600px;
+      overflow-y: auto;
+      background: transparent !important;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    ins.klk-aff-widget:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+
+    /* 🔧 小狗漂浮按鈕樣式 */
+    .floating-button {
+      position: fixed;
+      right: 20px;
+      bottom: 100px;
+      width: 140px;
+      z-index: 9999;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .floating-button:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .grid-area {
+        padding: 0 10px;
+      }
+      .floating-button {
+        width: 100px;
+        right: 10px;
+        bottom: 80px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 頂部橫幅 -->
+  <div class="banner">
+    <h1>Klook酷創祭★橘米折扣碼【ogmi0101klook】</h1>
+    <p>酷創祭推薦行程，高雄好玩！</p>
+  </div>
+
+  <!-- 小工具區 -->
+  <div class="grid-area">
+    <ins class="klk-aff-widget"
+         data-adid="1038372"
+         data-lang="zh-TW"
+         data-currency="TWD"
+         data-cardH="126"
+         data-padding="92"
+         data-lgH="470"
+         data-edgeValue="655"
+         data-prod="static_widget"
+         data-amount="4">
+      <a href="https://www.klook.com/">Klook.com</a>
+    </ins>
+  </div>
+
+  <!-- 🔧 漂浮圖片按鈕 -->
+  <a href="https://www.klook.com/zh-TW/coupons/?code=ogmi0101klook" target="_blank">
+    <img src="https://raw.githubusercontent.com/ogmi0101/klook/main/%E5%92%AA%E5%90%89%E5%8E%BB%E8%83%8C.png" 
+         alt="點我領取 Klook 優惠" 
+         class="floating-button" />
+  </a>
+
+  <!-- 載入KLOOK小工具 -->
+  <script type="text/javascript">
+    (function (d, sc, u) {
+      var s = d.createElement(sc),
+          p = d.getElementsByTagName(sc)[0];
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = u;
+      p.parentNode.insertBefore(s, p);
+    })(document, "script", "https://affiliate.klook.com/widget/fetch-iframe-init.js");
+  </script>
+</body>
+</html>
